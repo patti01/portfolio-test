@@ -20,7 +20,8 @@ class Fade extends Highway.Transition {
 
             .set($frameBlack, { scaleX: 0 })
             .to($frameBlue, 2, {
-                scaleX: 0, transformOrigin: 'left', ease: Bounce.easeOut
+                scaleX: 0, transformOrigin: 'left', ease:
+                    Power3.easeOut
             })
 
             .fromTo(to, 0.5, { scaleX: 1 }, {
